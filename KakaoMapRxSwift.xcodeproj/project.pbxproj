@@ -59,6 +59,9 @@
 		1E5130FA2810C60A00857F54 /* KLDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5130F92810C60A00857F54 /* KLDocument.swift */; };
 		1E5130FC2810C66A00857F54 /* DetailListCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5130FB2810C66A00857F54 /* DetailListCellData.swift */; };
 		1E5130FF2810C77E00857F54 /* LocationInformationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5130FE2810C77E00857F54 /* LocationInformationViewModel.swift */; };
+		1E7E4112281440FF00B42429 /* DetailListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7E4111281440FF00B42429 /* DetailListCell.swift */; };
+		1E7E4114281442A200B42429 /* DetailListBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7E4113281442A200B42429 /* DetailListBackgroundView.swift */; };
+		1E7E4116281442AF00B42429 /* DetailListBackgroundViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7E4115281442AF00B42429 /* DetailListBackgroundViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -119,6 +122,9 @@
 		1E5130F92810C60A00857F54 /* KLDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLDocument.swift; sourceTree = "<group>"; };
 		1E5130FB2810C66A00857F54 /* DetailListCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListCellData.swift; sourceTree = "<group>"; };
 		1E5130FE2810C77E00857F54 /* LocationInformationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInformationViewModel.swift; sourceTree = "<group>"; };
+		1E7E4111281440FF00B42429 /* DetailListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListCell.swift; sourceTree = "<group>"; };
+		1E7E4113281442A200B42429 /* DetailListBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListBackgroundView.swift; sourceTree = "<group>"; };
+		1E7E4115281442AF00B42429 /* DetailListBackgroundViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListBackgroundViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,6 +276,9 @@
 			children = (
 				1E5130902810C03500857F54 /* LocationInformationViewController.swift */,
 				1E5130FE2810C77E00857F54 /* LocationInformationViewModel.swift */,
+				1E7E4111281440FF00B42429 /* DetailListCell.swift */,
+				1E7E4113281442A200B42429 /* DetailListBackgroundView.swift */,
+				1E7E4115281442AF00B42429 /* DetailListBackgroundViewModel.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -384,9 +393,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E5130F72810C5C600857F54 /* LocationData.swift in Sources */,
+				1E7E4114281442A200B42429 /* DetailListBackgroundView.swift in Sources */,
+				1E7E4116281442AF00B42429 /* DetailListBackgroundViewModel.swift in Sources */,
 				1E5130FA2810C60A00857F54 /* KLDocument.swift in Sources */,
 				1E5130912810C03500857F54 /* LocationInformationViewController.swift in Sources */,
 				1E4F57382810CBCE00ED0397 /* MTMapViewError.swift in Sources */,
+				1E7E4112281440FF00B42429 /* DetailListCell.swift in Sources */,
 				1E51308D2810C03500857F54 /* AppDelegate.swift in Sources */,
 				1E5130FC2810C66A00857F54 /* DetailListCellData.swift in Sources */,
 				1E51308F2810C03500857F54 /* SceneDelegate.swift in Sources */,

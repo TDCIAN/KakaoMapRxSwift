@@ -18,6 +18,7 @@ class LocationInformationViewController: UIViewController {
     let mapView = MTMapView()
     let detailListTableView = UITableView()
     let currentLocationButton = UIButton()
+    let detailListBackgroundView = DetailListBackgroundView()
     let viewModel = LocationInformationViewModel()
 
     override func viewDidLoad() {
@@ -32,6 +33,8 @@ class LocationInformationViewController: UIViewController {
     }
     
     func bind(_ viewModel: LocationInformationViewModel) {
+        detailListBackgroundView.bind(viewModel.detailListBackgroundViewModel)
+        
         viewModel.setMapCenter
             .emit(to: mapView.rx.setMapCenterPoint)
             .disposed(by: disposeBag)
@@ -39,6 +42,29 @@ class LocationInformationViewController: UIViewController {
         // 뷰모델에서 에러 메시지를 받을 때마다 얼럿 컨트롤러를 띄운다
         viewModel.errorMessage
             .emit(to: self.rx.presentAlert)
+            .disposed(by: disposeBag)
+        
+        viewModel.detailListCellData
+            .drive(detailListTableView.rx.items) { tableView, row, data in
+                let cell = tableView.dequeueReusableCell(withIdentifier: DetailListCell.identifier, for: IndexPath(row: row, section: 0)) as! DetailListCell
+                cell.setData(data)
+                return cell
+            }
+            .disposed(by: disposeBag)
+        
+        // 맵 위에 핀 뿌리기
+        viewModel.detailListCellData
+            .map { $0.compactMap { $0.point } }
+            .drive(self.rx.addPOIItems)
+            .disposed(by: disposeBag)
+        
+        viewModel.scrollToSelectedLocation
+            .emit(to: self.rx.showSelectedLocation)
+            .disposed(by: disposeBag)
+        
+        detailListTableView.rx.itemSelected
+            .map { $0.row }
+            .bind(to: viewModel.detailListItemSelected)
             .disposed(by: disposeBag)
         
         currentLocationButton.rx.tap
@@ -53,6 +79,13 @@ class LocationInformationViewController: UIViewController {
         currentLocationButton.setImage(UIImage(systemName: "location.fill"), for: .normal)
         currentLocationButton.backgroundColor = .white
         currentLocationButton.layer.cornerRadius = 20
+        
+        detailListTableView.register(
+            DetailListCell.self,
+            forCellReuseIdentifier: DetailListCell.identifier
+        )
+        detailListTableView.separatorStyle = .none
+        detailListTableView.backgroundView = detailListBackgroundView
     }
     
     private func layout() {
@@ -146,6 +179,36 @@ extension Reactive where Base: LocationInformationViewController {
             alertController.addAction(action)
             
             base.present(alertController, animated: true, completion: nil)
+        }
+    }
+    
+    var showSelectedLocation: Binder<Int> {
+        return Binder(base) { base, row in
+            let indexPath = IndexPath(row: row, section: 0)
+            base.detailListTableView.selectRow(
+                at: indexPath,
+                animated: true,
+                scrollPosition: .top
+            )
+        }
+    }
+    
+    var addPOIItems: Binder<[MTMapPoint]> {
+        return Binder(base) { base, points in
+            let items = points
+                .enumerated()
+                .map { offset, point -> MTMapPOIItem in
+                    let mapPOIItem = MTMapPOIItem()
+                    mapPOIItem.mapPoint = point
+                    mapPOIItem.markerType = .redPin
+                    mapPOIItem.showAnimationType = .springFromGround
+                    mapPOIItem.tag = offset
+                    return mapPOIItem
+                }
+            
+            base.mapView.removeAllPOIItems()
+            print("뿌리는 핀들: \(items)")
+            base.mapView.addPOIItems(items)
         }
     }
 }
