@@ -7,11 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1E4F572B2810C83E00ED0397 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 1E4F572A2810C83E00ED0397 /* RxBlocking */; };
-		1E4F572D2810C83E00ED0397 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 1E4F572C2810C83E00ED0397 /* RxCocoa */; };
-		1E4F572F2810C83E00ED0397 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 1E4F572E2810C83E00ED0397 /* RxRelay */; };
-		1E4F57312810C83E00ED0397 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1E4F57302810C83E00ED0397 /* RxSwift */; };
-		1E4F57332810C83E00ED0397 /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = 1E4F57322810C83E00ED0397 /* RxTest */; };
 		1E4F57362810C85000ED0397 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1E4F57352810C85000ED0397 /* SnapKit */; };
 		1E4F57382810CBCE00ED0397 /* MTMapViewError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4F57372810CBCE00ED0397 /* MTMapViewError.swift */; };
 		1E51308D2810C03500857F54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E51308C2810C03500857F54 /* AppDelegate.swift */; };
@@ -62,6 +57,12 @@
 		1E7E4112281440FF00B42429 /* DetailListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7E4111281440FF00B42429 /* DetailListCell.swift */; };
 		1E7E4114281442A200B42429 /* DetailListBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7E4113281442A200B42429 /* DetailListBackgroundView.swift */; };
 		1E7E4116281442AF00B42429 /* DetailListBackgroundViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7E4115281442AF00B42429 /* DetailListBackgroundViewModel.swift */; };
+		1EC1AC61281525BC00BED480 /* LocalAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC1AC60281525BC00BED480 /* LocalAPI.swift */; };
+		1EC1AC64281526B800BED480 /* LocalNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC1AC63281526B800BED480 /* LocalNetwork.swift */; };
+		1EC1AC662815282200BED480 /* LocationInformationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC1AC652815282200BED480 /* LocationInformationModel.swift */; };
+		1EC1AC8628152FC700BED480 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 1EC1AC8528152FC700BED480 /* RxCocoa */; };
+		1EC1AC8828152FC700BED480 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 1EC1AC8728152FC700BED480 /* RxRelay */; };
+		1EC1AC8A28152FC700BED480 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1EC1AC8928152FC700BED480 /* RxSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -125,6 +126,12 @@
 		1E7E4111281440FF00B42429 /* DetailListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListCell.swift; sourceTree = "<group>"; };
 		1E7E4113281442A200B42429 /* DetailListBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListBackgroundView.swift; sourceTree = "<group>"; };
 		1E7E4115281442AF00B42429 /* DetailListBackgroundViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListBackgroundViewModel.swift; sourceTree = "<group>"; };
+		1EC1AC60281525BC00BED480 /* LocalAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAPI.swift; sourceTree = "<group>"; };
+		1EC1AC63281526B800BED480 /* LocalNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNetwork.swift; sourceTree = "<group>"; };
+		1EC1AC652815282200BED480 /* LocationInformationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInformationModel.swift; sourceTree = "<group>"; };
+		1EC1AC6E28152D5100BED480 /* KakaoMapRxSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoMapRxSwiftTests.swift; sourceTree = "<group>"; };
+		1EC1AC7B28152D7800BED480 /* KakaoMapRxSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoMapRxSwiftUITests.swift; sourceTree = "<group>"; };
+		1EC1AC7D28152D7800BED480 /* KakaoMapRxSwiftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoMapRxSwiftUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,21 +139,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E4F57332810C83E00ED0397 /* RxTest in Frameworks */,
 				1E5130F52810C54100857F54 /* Metal.framework in Frameworks */,
 				1E5130F32810C4DA00857F54 /* libsqlite3.tbd in Frameworks */,
-				1E4F572D2810C83E00ED0397 /* RxCocoa in Frameworks */,
+				1EC1AC8628152FC700BED480 /* RxCocoa in Frameworks */,
 				1E5130F12810C4D000857F54 /* libxml2.tbd in Frameworks */,
 				1E5130EF2810C4C900857F54 /* libc++.tbd in Frameworks */,
 				1E5130ED2810C4BD00857F54 /* QuartzCore.framework in Frameworks */,
-				1E4F57312810C83E00ED0397 /* RxSwift in Frameworks */,
-				1E4F572F2810C83E00ED0397 /* RxRelay in Frameworks */,
+				1EC1AC8A28152FC700BED480 /* RxSwift in Frameworks */,
+				1EC1AC8828152FC700BED480 /* RxRelay in Frameworks */,
 				1E4F57362810C85000ED0397 /* SnapKit in Frameworks */,
 				1E5130EB2810C4B400857F54 /* CoreLocation.framework in Frameworks */,
 				1E5130E92810C47B00857F54 /* SystemConfiguration.framework in Frameworks */,
 				1E5130E72810C46C00857F54 /* OpenGLES.framework in Frameworks */,
 				1E5130E22810C31300857F54 /* DaumMap.framework in Frameworks */,
-				1E4F572B2810C83E00ED0397 /* RxBlocking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +178,8 @@
 			isa = PBXGroup;
 			children = (
 				1E51308B2810C03500857F54 /* KakaoMapRxSwift */,
+				1EC1AC6D28152D5100BED480 /* KakaoMapRxSwiftTests */,
+				1EC1AC7A28152D7800BED480 /* KakaoMapRxSwiftUITests */,
 				1E51308A2810C03500857F54 /* Products */,
 				1827406027C44570BEA653F4 /* Frameworks */,
 			);
@@ -192,6 +199,7 @@
 				1E5130E52810C42F00857F54 /* BridgingHeader.h */,
 				1E51308C2810C03500857F54 /* AppDelegate.swift */,
 				1E51308E2810C03500857F54 /* SceneDelegate.swift */,
+				1EC1AC62281525C100BED480 /* Network */,
 				1E5130FD2810C75700857F54 /* Presentation */,
 				1E5130F82810C5CC00857F54 /* Entities */,
 				1E5130952810C03700857F54 /* Assets.xcassets */,
@@ -274,13 +282,48 @@
 		1E5130FD2810C75700857F54 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				1E5130902810C03500857F54 /* LocationInformationViewController.swift */,
-				1E5130FE2810C77E00857F54 /* LocationInformationViewModel.swift */,
+				1EC1AC672815282600BED480 /* LocationInfo */,
 				1E7E4111281440FF00B42429 /* DetailListCell.swift */,
 				1E7E4113281442A200B42429 /* DetailListBackgroundView.swift */,
 				1E7E4115281442AF00B42429 /* DetailListBackgroundViewModel.swift */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		1EC1AC62281525C100BED480 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				1EC1AC60281525BC00BED480 /* LocalAPI.swift */,
+				1EC1AC63281526B800BED480 /* LocalNetwork.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		1EC1AC672815282600BED480 /* LocationInfo */ = {
+			isa = PBXGroup;
+			children = (
+				1E5130902810C03500857F54 /* LocationInformationViewController.swift */,
+				1E5130FE2810C77E00857F54 /* LocationInformationViewModel.swift */,
+				1EC1AC652815282200BED480 /* LocationInformationModel.swift */,
+			);
+			path = LocationInfo;
+			sourceTree = "<group>";
+		};
+		1EC1AC6D28152D5100BED480 /* KakaoMapRxSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				1EC1AC6E28152D5100BED480 /* KakaoMapRxSwiftTests.swift */,
+			);
+			path = KakaoMapRxSwiftTests;
+			sourceTree = "<group>";
+		};
+		1EC1AC7A28152D7800BED480 /* KakaoMapRxSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1EC1AC7B28152D7800BED480 /* KakaoMapRxSwiftUITests.swift */,
+				1EC1AC7D28152D7800BED480 /* KakaoMapRxSwiftUITestsLaunchTests.swift */,
+			);
+			path = KakaoMapRxSwiftUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,12 +343,10 @@
 			);
 			name = KakaoMapRxSwift;
 			packageProductDependencies = (
-				1E4F572A2810C83E00ED0397 /* RxBlocking */,
-				1E4F572C2810C83E00ED0397 /* RxCocoa */,
-				1E4F572E2810C83E00ED0397 /* RxRelay */,
-				1E4F57302810C83E00ED0397 /* RxSwift */,
-				1E4F57322810C83E00ED0397 /* RxTest */,
 				1E4F57352810C85000ED0397 /* SnapKit */,
+				1EC1AC8528152FC700BED480 /* RxCocoa */,
+				1EC1AC8728152FC700BED480 /* RxRelay */,
+				1EC1AC8928152FC700BED480 /* RxSwift */,
 			);
 			productName = KakaoMapRxSwift;
 			productReference = 1E5130892810C03500857F54 /* KakaoMapRxSwift.app */;
@@ -336,8 +377,8 @@
 			);
 			mainGroup = 1E5130802810C03500857F54;
 			packageReferences = (
-				1E4F57292810C83E00ED0397 /* XCRemoteSwiftPackageReference "RxSwift" */,
 				1E4F57342810C85000ED0397 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				1EC1AC8428152FC700BED480 /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = 1E51308A2810C03500857F54 /* Products */;
 			projectDirPath = "";
@@ -396,11 +437,14 @@
 				1E7E4114281442A200B42429 /* DetailListBackgroundView.swift in Sources */,
 				1E7E4116281442AF00B42429 /* DetailListBackgroundViewModel.swift in Sources */,
 				1E5130FA2810C60A00857F54 /* KLDocument.swift in Sources */,
+				1EC1AC64281526B800BED480 /* LocalNetwork.swift in Sources */,
 				1E5130912810C03500857F54 /* LocationInformationViewController.swift in Sources */,
 				1E4F57382810CBCE00ED0397 /* MTMapViewError.swift in Sources */,
+				1EC1AC61281525BC00BED480 /* LocalAPI.swift in Sources */,
 				1E7E4112281440FF00B42429 /* DetailListCell.swift in Sources */,
 				1E51308D2810C03500857F54 /* AppDelegate.swift in Sources */,
 				1E5130FC2810C66A00857F54 /* DetailListCellData.swift in Sources */,
+				1EC1AC662815282200BED480 /* LocationInformationModel.swift in Sources */,
 				1E51308F2810C03500857F54 /* SceneDelegate.swift in Sources */,
 				1E5130FF2810C77E00857F54 /* LocationInformationViewModel.swift in Sources */,
 			);
@@ -545,6 +589,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4FTFKXF8N5;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/DaumMap.embeddedframework",
@@ -579,6 +624,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4FTFKXF8N5;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/DaumMap.embeddedframework",
@@ -628,14 +674,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		1E4F57292810C83E00ED0397 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
 		1E4F57342810C85000ED0397 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
@@ -644,38 +682,36 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		1EC1AC8428152FC700BED480 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		1E4F572A2810C83E00ED0397 /* RxBlocking */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1E4F57292810C83E00ED0397 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxBlocking;
-		};
-		1E4F572C2810C83E00ED0397 /* RxCocoa */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1E4F57292810C83E00ED0397 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxCocoa;
-		};
-		1E4F572E2810C83E00ED0397 /* RxRelay */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1E4F57292810C83E00ED0397 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxRelay;
-		};
-		1E4F57302810C83E00ED0397 /* RxSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1E4F57292810C83E00ED0397 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxSwift;
-		};
-		1E4F57322810C83E00ED0397 /* RxTest */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1E4F57292810C83E00ED0397 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxTest;
-		};
 		1E4F57352810C85000ED0397 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 1E4F57342810C85000ED0397 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		1EC1AC8528152FC700BED480 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1EC1AC8428152FC700BED480 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		1EC1AC8728152FC700BED480 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1EC1AC8428152FC700BED480 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		1EC1AC8928152FC700BED480 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1EC1AC8428152FC700BED480 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
