@@ -1,0 +1,6 @@
+framework module Pods_KakaoMapRxSwift {
+  umbrella header "Pods-KakaoMapRxSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}

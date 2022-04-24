@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1E4F57362810C85000ED0397 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1E4F57352810C85000ED0397 /* SnapKit */; };
 		1E4F57382810CBCE00ED0397 /* MTMapViewError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4F57372810CBCE00ED0397 /* MTMapViewError.swift */; };
 		1E51308D2810C03500857F54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E51308C2810C03500857F54 /* AppDelegate.swift */; };
 		1E51308F2810C03500857F54 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E51308E2810C03500857F54 /* SceneDelegate.swift */; };
@@ -60,10 +59,20 @@
 		1EC1AC61281525BC00BED480 /* LocalAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC1AC60281525BC00BED480 /* LocalAPI.swift */; };
 		1EC1AC64281526B800BED480 /* LocalNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC1AC63281526B800BED480 /* LocalNetwork.swift */; };
 		1EC1AC662815282200BED480 /* LocationInformationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC1AC652815282200BED480 /* LocationInformationModel.swift */; };
-		1EC1AC8628152FC700BED480 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 1EC1AC8528152FC700BED480 /* RxCocoa */; };
-		1EC1AC8828152FC700BED480 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 1EC1AC8728152FC700BED480 /* RxRelay */; };
-		1EC1AC8A28152FC700BED480 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1EC1AC8928152FC700BED480 /* RxSwift */; };
+		1EC1ACAC2815332F00BED480 /* KakaoMapRxSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC1ACAB2815332F00BED480 /* KakaoMapRxSwiftTests.swift */; };
+		594F3BF3A990CA4240E95F30 /* Pods_KakaoMapRxSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2F51D4D43007BBF967C0526 /* Pods_KakaoMapRxSwiftTests.framework */; };
+		7D108058F335D52FAD1C2D89 /* Pods_KakaoMapRxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6FB285B76DF1F481E421225 /* Pods_KakaoMapRxSwift.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1EC1ACAD2815332F00BED480 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E5130812810C03500857F54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E5130882810C03500857F54;
+			remoteInfo = KakaoMapRxSwift;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1E4F57372810CBCE00ED0397 /* MTMapViewError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTMapViewError.swift; sourceTree = "<group>"; };
@@ -129,9 +138,14 @@
 		1EC1AC60281525BC00BED480 /* LocalAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAPI.swift; sourceTree = "<group>"; };
 		1EC1AC63281526B800BED480 /* LocalNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNetwork.swift; sourceTree = "<group>"; };
 		1EC1AC652815282200BED480 /* LocationInformationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInformationModel.swift; sourceTree = "<group>"; };
-		1EC1AC6E28152D5100BED480 /* KakaoMapRxSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoMapRxSwiftTests.swift; sourceTree = "<group>"; };
-		1EC1AC7B28152D7800BED480 /* KakaoMapRxSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoMapRxSwiftUITests.swift; sourceTree = "<group>"; };
-		1EC1AC7D28152D7800BED480 /* KakaoMapRxSwiftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoMapRxSwiftUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1EC1ACA92815332F00BED480 /* KakaoMapRxSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KakaoMapRxSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EC1ACAB2815332F00BED480 /* KakaoMapRxSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoMapRxSwiftTests.swift; sourceTree = "<group>"; };
+		261F504470633492F2BC4F67 /* Pods-KakaoMapRxSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoMapRxSwift.release.xcconfig"; path = "Target Support Files/Pods-KakaoMapRxSwift/Pods-KakaoMapRxSwift.release.xcconfig"; sourceTree = "<group>"; };
+		2F0C3F54CA46EF946EB7648F /* Pods-KakaoMapRxSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoMapRxSwiftTests.release.xcconfig"; path = "Target Support Files/Pods-KakaoMapRxSwiftTests/Pods-KakaoMapRxSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		7A135976ACE125E74A933085 /* Pods-KakaoMapRxSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoMapRxSwift.debug.xcconfig"; path = "Target Support Files/Pods-KakaoMapRxSwift/Pods-KakaoMapRxSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		C379DD9A23C46F9D1EAC1DCD /* Pods-KakaoMapRxSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoMapRxSwiftTests.debug.xcconfig"; path = "Target Support Files/Pods-KakaoMapRxSwiftTests/Pods-KakaoMapRxSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C6FB285B76DF1F481E421225 /* Pods_KakaoMapRxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KakaoMapRxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2F51D4D43007BBF967C0526 /* Pods_KakaoMapRxSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KakaoMapRxSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,17 +155,22 @@
 			files = (
 				1E5130F52810C54100857F54 /* Metal.framework in Frameworks */,
 				1E5130F32810C4DA00857F54 /* libsqlite3.tbd in Frameworks */,
-				1EC1AC8628152FC700BED480 /* RxCocoa in Frameworks */,
 				1E5130F12810C4D000857F54 /* libxml2.tbd in Frameworks */,
 				1E5130EF2810C4C900857F54 /* libc++.tbd in Frameworks */,
 				1E5130ED2810C4BD00857F54 /* QuartzCore.framework in Frameworks */,
-				1EC1AC8A28152FC700BED480 /* RxSwift in Frameworks */,
-				1EC1AC8828152FC700BED480 /* RxRelay in Frameworks */,
-				1E4F57362810C85000ED0397 /* SnapKit in Frameworks */,
 				1E5130EB2810C4B400857F54 /* CoreLocation.framework in Frameworks */,
 				1E5130E92810C47B00857F54 /* SystemConfiguration.framework in Frameworks */,
 				1E5130E72810C46C00857F54 /* OpenGLES.framework in Frameworks */,
 				1E5130E22810C31300857F54 /* DaumMap.framework in Frameworks */,
+				7D108058F335D52FAD1C2D89 /* Pods_KakaoMapRxSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EC1ACA62815332F00BED480 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				594F3BF3A990CA4240E95F30 /* Pods_KakaoMapRxSwiftTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,18 +189,32 @@
 				1E5130E82810C47B00857F54 /* SystemConfiguration.framework */,
 				1E5130E62810C46C00857F54 /* OpenGLES.framework */,
 				1E5130A02810C31300857F54 /* DaumMap.embeddedframework */,
+				C6FB285B76DF1F481E421225 /* Pods_KakaoMapRxSwift.framework */,
+				F2F51D4D43007BBF967C0526 /* Pods_KakaoMapRxSwiftTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1DB715C3BED9A54535A693EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A135976ACE125E74A933085 /* Pods-KakaoMapRxSwift.debug.xcconfig */,
+				261F504470633492F2BC4F67 /* Pods-KakaoMapRxSwift.release.xcconfig */,
+				C379DD9A23C46F9D1EAC1DCD /* Pods-KakaoMapRxSwiftTests.debug.xcconfig */,
+				2F0C3F54CA46EF946EB7648F /* Pods-KakaoMapRxSwiftTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		1E5130802810C03500857F54 = {
 			isa = PBXGroup;
 			children = (
 				1E51308B2810C03500857F54 /* KakaoMapRxSwift */,
-				1EC1AC6D28152D5100BED480 /* KakaoMapRxSwiftTests */,
-				1EC1AC7A28152D7800BED480 /* KakaoMapRxSwiftUITests */,
+				1EC1ACAA2815332F00BED480 /* KakaoMapRxSwiftTests */,
 				1E51308A2810C03500857F54 /* Products */,
 				1827406027C44570BEA653F4 /* Frameworks */,
+				1DB715C3BED9A54535A693EA /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -189,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				1E5130892810C03500857F54 /* KakaoMapRxSwift.app */,
+				1EC1ACA92815332F00BED480 /* KakaoMapRxSwiftTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -309,21 +343,12 @@
 			path = LocationInfo;
 			sourceTree = "<group>";
 		};
-		1EC1AC6D28152D5100BED480 /* KakaoMapRxSwiftTests */ = {
+		1EC1ACAA2815332F00BED480 /* KakaoMapRxSwiftTests */ = {
 			isa = PBXGroup;
 			children = (
-				1EC1AC6E28152D5100BED480 /* KakaoMapRxSwiftTests.swift */,
+				1EC1ACAB2815332F00BED480 /* KakaoMapRxSwiftTests.swift */,
 			);
 			path = KakaoMapRxSwiftTests;
-			sourceTree = "<group>";
-		};
-		1EC1AC7A28152D7800BED480 /* KakaoMapRxSwiftUITests */ = {
-			isa = PBXGroup;
-			children = (
-				1EC1AC7B28152D7800BED480 /* KakaoMapRxSwiftUITests.swift */,
-				1EC1AC7D28152D7800BED480 /* KakaoMapRxSwiftUITestsLaunchTests.swift */,
-			);
-			path = KakaoMapRxSwiftUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,24 +358,40 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1E51309D2810C03700857F54 /* Build configuration list for PBXNativeTarget "KakaoMapRxSwift" */;
 			buildPhases = (
+				ADF99E507A7AA8ACA0BB7218 /* [CP] Check Pods Manifest.lock */,
 				1E5130852810C03500857F54 /* Sources */,
 				1E5130862810C03500857F54 /* Frameworks */,
 				1E5130872810C03500857F54 /* Resources */,
+				0CA60BDED099AB2EAFFE751E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = KakaoMapRxSwift;
-			packageProductDependencies = (
-				1E4F57352810C85000ED0397 /* SnapKit */,
-				1EC1AC8528152FC700BED480 /* RxCocoa */,
-				1EC1AC8728152FC700BED480 /* RxRelay */,
-				1EC1AC8928152FC700BED480 /* RxSwift */,
-			);
 			productName = KakaoMapRxSwift;
 			productReference = 1E5130892810C03500857F54 /* KakaoMapRxSwift.app */;
 			productType = "com.apple.product-type.application";
+		};
+		1EC1ACA82815332F00BED480 /* KakaoMapRxSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EC1ACAF2815332F00BED480 /* Build configuration list for PBXNativeTarget "KakaoMapRxSwiftTests" */;
+			buildPhases = (
+				EC984DB46879B4491C47C9A0 /* [CP] Check Pods Manifest.lock */,
+				1EC1ACA52815332F00BED480 /* Sources */,
+				1EC1ACA62815332F00BED480 /* Frameworks */,
+				1EC1ACA72815332F00BED480 /* Resources */,
+				73AE71A3D0CB5F4C86EB9D68 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1EC1ACAE2815332F00BED480 /* PBXTargetDependency */,
+			);
+			name = KakaoMapRxSwiftTests;
+			productName = KakaoMapRxSwiftTests;
+			productReference = 1EC1ACA92815332F00BED480 /* KakaoMapRxSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -365,6 +406,10 @@
 					1E5130882810C03500857F54 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
+					1EC1ACA82815332F00BED480 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 1E5130882810C03500857F54;
+					};
 				};
 			};
 			buildConfigurationList = 1E5130842810C03500857F54 /* Build configuration list for PBXProject "KakaoMapRxSwift" */;
@@ -376,15 +421,12 @@
 				Base,
 			);
 			mainGroup = 1E5130802810C03500857F54;
-			packageReferences = (
-				1E4F57342810C85000ED0397 /* XCRemoteSwiftPackageReference "SnapKit" */,
-				1EC1AC8428152FC700BED480 /* XCRemoteSwiftPackageReference "RxSwift" */,
-			);
 			productRefGroup = 1E51308A2810C03500857F54 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				1E5130882810C03500857F54 /* KakaoMapRxSwift */,
+				1EC1ACA82815332F00BED480 /* KakaoMapRxSwiftTests */,
 			);
 		};
 /* End PBXProject section */
@@ -426,7 +468,95 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1EC1ACA72815332F00BED480 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CA60BDED099AB2EAFFE751E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KakaoMapRxSwift/Pods-KakaoMapRxSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KakaoMapRxSwift/Pods-KakaoMapRxSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KakaoMapRxSwift/Pods-KakaoMapRxSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73AE71A3D0CB5F4C86EB9D68 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KakaoMapRxSwiftTests/Pods-KakaoMapRxSwiftTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KakaoMapRxSwiftTests/Pods-KakaoMapRxSwiftTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KakaoMapRxSwiftTests/Pods-KakaoMapRxSwiftTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADF99E507A7AA8ACA0BB7218 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KakaoMapRxSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC984DB46879B4491C47C9A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KakaoMapRxSwiftTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1E5130852810C03500857F54 /* Sources */ = {
@@ -450,7 +580,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1EC1ACA52815332F00BED480 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EC1ACAC2815332F00BED480 /* KakaoMapRxSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1EC1ACAE2815332F00BED480 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E5130882810C03500857F54 /* KakaoMapRxSwift */;
+			targetProxy = 1EC1ACAD2815332F00BED480 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1E5130972810C03700857F54 /* LaunchScreen.storyboard */ = {
@@ -582,6 +728,7 @@
 		};
 		1E51309E2810C03700857F54 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A135976ACE125E74A933085 /* Pods-KakaoMapRxSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -617,6 +764,7 @@
 		};
 		1E51309F2810C03700857F54 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 261F504470633492F2BC4F67 /* Pods-KakaoMapRxSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -650,6 +798,46 @@
 			};
 			name = Release;
 		};
+		1EC1ACB02815332F00BED480 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C379DD9A23C46F9D1EAC1DCD /* Pods-KakaoMapRxSwiftTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4FTFKXF8N5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeongminkim.KakaoMapRxSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KakaoMapRxSwift.app/KakaoMapRxSwift";
+			};
+			name = Debug;
+		};
+		1EC1ACB12815332F00BED480 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F0C3F54CA46EF946EB7648F /* Pods-KakaoMapRxSwiftTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4FTFKXF8N5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeongminkim.KakaoMapRxSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KakaoMapRxSwift.app/KakaoMapRxSwift";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -671,49 +859,16 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		1EC1ACAF2815332F00BED480 /* Build configuration list for PBXNativeTarget "KakaoMapRxSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EC1ACB02815332F00BED480 /* Debug */,
+				1EC1ACB12815332F00BED480 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		1E4F57342810C85000ED0397 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
-		1EC1AC8428152FC700BED480 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		1E4F57352810C85000ED0397 /* SnapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1E4F57342810C85000ED0397 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
-		};
-		1EC1AC8528152FC700BED480 /* RxCocoa */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1EC1AC8428152FC700BED480 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxCocoa;
-		};
-		1EC1AC8728152FC700BED480 /* RxRelay */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1EC1AC8428152FC700BED480 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxRelay;
-		};
-		1EC1AC8928152FC700BED480 /* RxSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1EC1AC8428152FC700BED480 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxSwift;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1E5130812810C03500857F54 /* Project object */;
 }
